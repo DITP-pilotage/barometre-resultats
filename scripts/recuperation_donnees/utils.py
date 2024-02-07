@@ -1,7 +1,17 @@
 import requests
 import re
+import os
+import urllib
+from dotenv import load_dotenv
 
-from constants import BASE_URL_API
+from constants import BASE_URL_API, GITHUB_BRANCH_DEFAULT, GITHUB_BRANCH_ALLOWED
+
+load_dotenv()
+
+
+branch = os.environ.get('BRANCH_GITHUB_REPO') if (os.environ.get('BRANCH_GITHUB_REPO') in GITHUB_BRANCH_ALLOWED) else GITHUB_BRANCH_DEFAULT
+print('Selected branch is:', branch)
+
 
 def get_all_dataset_with_indicId():
     """Retourne la liste de tous les fichiers du dossier data et l'indic_id correspondant
@@ -14,7 +24,7 @@ def get_all_dataset_with_indicId():
         "download_url":x['download_url'], 
         "name":x['name'], 
         "path":x['path'], 
-    } for x in requests.get(BASE_URL_API).json()]
+    } for x in requests.get(BASE_URL_API + "?ref="+branch).json()]
 
 
 def get_dataset_indic(indic_id):
