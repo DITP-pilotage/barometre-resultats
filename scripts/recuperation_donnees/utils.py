@@ -3,8 +3,21 @@ import re
 
 from constants import BASE_URL_API
 
+def get_all_dataset_with_indicId():
+    """Retourne la liste de tous les fichiers du dossier data et l'indic_id correspondant
 
-def get_indic_dataset(indic_id):
+    Returns:
+        list: Liste de dict {name, path, download_url, indic_id} pour chaque fichier du dossier
+    """
+    return [{
+        "indic_id": _get_indicId_from_string(x['name']),
+        "download_url":x['download_url'], 
+        "name":x['name'], 
+        "path":x['path'], 
+    } for x in requests.get(BASE_URL_API).json()]
+
+
+def get_dataset_indic(indic_id):
     """Permet d'obtenir l'url d'un fichier CSV à partir d'un numéro d'indicateur
 
     Args:
@@ -12,21 +25,14 @@ def get_indic_dataset(indic_id):
 
     Raises:
         RuntimeError: Si aucun CSV correspondant n'est trouvé pour cet indicateur
-        RuntimeError: Si plus d'un CSV correspondant n'est trouvé pour cet indicateur
+        RuntimeError: Si plus d'un CSV correspondant est trouvé pour cet indicateur
 
     Returns:
         string: URL du CSV correspondant à cet indicateur
     """
 
-    # Try to match with following resource field
-    SEARCH_IN_FIELD = 'name'
-    # Try to match resource field using following function
-    SEARCH_METHOD = lambda x : x.lower()
-
-    # Github API response
-    resources=[{"name":x['name'], "path":x['path'], "download_url":x['download_url'] } for x in requests.get(BASE_URL_API).json()]
-    # matching datagouv resources
-    matching_resources = list(filter(lambda x: bool(re.search(SEARCH_METHOD(indic_id), SEARCH_METHOD(x[SEARCH_IN_FIELD]))), resources))
+    # matching files
+    matching_resources = list(filter(lambda x: indic_id==x['indic_id'], get_all_dataset_with_indicId()))
     
     # Raise error if 0 or multiple resource match requested indic_id
     if (len(matching_resources)>1): raise RuntimeError('Multiple matching resources for', indic_id)
@@ -34,3 +40,27 @@ def get_indic_dataset(indic_id):
     
     # Return url to download the file
     return matching_resources[0]['download_url']
+
+def _get_indicId_from_string(str_):
+    """Try to find indic_id in a string
+
+    Args:
+        str_ (string): String to inspect
+
+    Raises:
+        RuntimeError: Multiple indic_id found in str
+        RuntimeError: No indic_id found in str
+
+    Returns:
+        string: Guessed indic_id
+    """
+    PATTERN="IND-\d\d\d"
+    pre_transform = lambda x : x.upper()
+
+    matching = re.findall(PATTERN, pre_transform(str_))
+
+    # Raise error if 0 or multiple PATTERN are found in str_
+    if (len(matching)>1): raise RuntimeError('Multiple pattern >'+PATTERN+'< found in >'+ str_+'<')
+    if (len(matching)<1): raise RuntimeError('No pattern >'+PATTERN+'< found in >'+ str_+'<')
+
+    return matching[0]
