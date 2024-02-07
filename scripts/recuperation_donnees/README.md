@@ -2,6 +2,8 @@
 
 Permet de retrouver l'URL d'un jeu de données d'un indicateur à l'aide de son ID.
 
+Pour rechercher un jeu de données sur une branche spécifique, modifier la valeur de la variable d'environnement `BRANCH_GITHUB_REPO`. Les valeurs autorisées pour les branches sont dans [constants.py](./constants.py) (`GITHUB_BRANCH_ALLOWED`).
+
 ## Usage
 
 ```python
