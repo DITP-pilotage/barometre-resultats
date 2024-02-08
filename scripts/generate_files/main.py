@@ -9,8 +9,9 @@ if __name__ =="__main__":
 
     # Récupération des données du baro
     donnees_baro = utils.get_data("Base cible", os.environ.get('PG_URL'))
+    donnees_baro_dev = utils.get_data("Base de dev", os.environ.get('PG_URL_DEV'))
     # Export des données du baro dans un fichier séparé par indicateur
-    OUT_DIR = "out/"
-    utils.export_by_indic(donnees_baro, OUT_DIR)
+    utils.export_by_indic(donnees_baro, "out/")
+    utils.export_by_indic(donnees_baro_dev, "out_dev/")
 
     print('done')
