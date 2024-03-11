@@ -1,7 +1,7 @@
-#import psycopg2
 import pandas as pd
 from sqlalchemy import create_engine
-
+import glob
+import os
 
 class DatabaseHelper:
     def __init__(self, connection_alias, pg_url) -> None:
@@ -23,6 +23,19 @@ class DatabaseHelper:
     def query(self, q):
         return pd.read_sql(q, self.dbConnection)
 
+def wipe_dir(dir_):
+    """Delete all files of directory
+
+    Args:
+        dir_ (string): Directory to clean
+    """
+
+    n_files_deleted=0
+    for f in glob.glob(dir_+"*"):
+        os.remove(f)
+        n_files_deleted+=1
+    
+    return n_files_deleted
 
 def get_data(connection_alias, db_url):
     QUERY = "SELECT * FROM barometre.tous_indicateurs"
