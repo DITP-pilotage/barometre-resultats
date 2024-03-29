@@ -1,3 +1,4 @@
 indic_id,enforce_zone_id,metric_enforce_date,maille,indic_vi,indic_va,indic_vc,indic_ta
-IND-833,FRANCE,2022-12-31,NAT,78.0,78.0,,100.0
-IND-833,FRANCE,2026-12-31,NAT,,,78.0,
+IND-833,FRANCE,2022-12-01,NAT,78.0,78.0,,
+IND-833,FRANCE,2023-12-01,NAT,,79.0,,100.0
+IND-833,FRANCE,2026-12-01,NAT,,,78.0,
