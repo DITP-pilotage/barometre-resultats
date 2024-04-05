@@ -1,5 +1,3 @@
 indic_id,enforce_zone_id,metric_enforce_date,maille,indic_vi,indic_va,indic_vc,indic_ta
 IND-650,FRANCE,2022-12-01,NAT,8000.0,,,
-IND-650,FRANCE,2023-09-01,NAT,,5467.0,,
-IND-650,FRANCE,2023-10-01,NAT,,7000.0,,0.0
 IND-650,FRANCE,2026-12-01,NAT,,,12000.0,
