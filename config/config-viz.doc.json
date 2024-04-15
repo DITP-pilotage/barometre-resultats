@@ -24,10 +24,6 @@
                             "autre"
                         ]
                     },
-                    "legend": {
-                        "type": "string",
-                        "description": "Légende par défaut dans les graphiques."
-                    },
                     "order_id": {
                         "type": "integer",
                         "description": "Ordre d'affichage de l'indicateur dans son chantier"
@@ -129,7 +125,7 @@
                                         },
                                         "legend": {
                                             "type": "string",
-                                            "description": "Légende du graphique. Si nulle, on utilise celle par défaut"
+                                            "description": "Légende du graphique. Si nulle, on utilise unite par défaut"
                                         },
                                         "vline": {
                                             "type": "array",
@@ -178,22 +174,34 @@
                         "description": "Afficher ou non le badge de couleur qui compare la valeur actuelle à la valeur précédente.",
                         "default": true
                     },
-                    "unite_in_text": {
+                    "verbe_action": {
                         "type": "string",
-                        "description": "Texte qui désigne l'unité de l'ojectif à atteindre. Ce texte sera utilisée notamment dans la phrase 'L’objectif à atteindre est de 316 XXX, en France.' Si cette valeur est 'null', on reprend la valeur du paramètre 'legend'. Il sera utilisé de manière générale dans tous les textes où l'on a besoin de l'unité dans une phrase rédigée."
+                        "description": "Verbe d'action pour la phrase objectif"
+                    }, 
+                    "unite": {
+                        "type": "string",
+                        "description": "Unité de l'indicateur, utilisé pour la phrase objectif"
+                    },
+                    "verbe_action_court": {
+                        "type": "string",
+                        "description": "Verbe d'action pour la phrase objectif courte. Prends la valeur de verbe_action si null ou non renseigné"
+                    },
+                    "unite_courte": {
+                        "type": "string",
+                        "description": "Unite pour la phrase objectif courte. Prends la valeur de unite si null ou non renseigné"
                     }
                 },
                 "required": [
                     "id",
                     "thematique",
                     "tendance",
-                    "legend",
                     "order_id",
                     "mailles_dispo",
                     "values",
                     "graphs",
                     "display_badge",
-                    "unite_in_text"
+                    "verbe_action",
+                    "unite"
                 ]
             }
         },
