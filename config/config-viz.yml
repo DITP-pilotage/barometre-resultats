@@ -352,7 +352,7 @@ indicateurs:
         label: "Objectif"
         options: 
           color: "blue-france"
-   - id: IND-263
+  - id: IND-263
     thematique: Environnement
     tendance: hausse
     mailles_dispo: ["DEPT", "REG", "NAT"]
@@ -383,7 +383,7 @@ indicateurs:
         label: "Objectif"
         options: 
           color: "blue-france"        
-   - id: IND-278
+  - id: IND-278
     thematique: Environnement
     tendance: hausse
     mailles_dispo: ["DEPT", "REG", "NAT"]
@@ -842,7 +842,7 @@ indicateurs:
     tendance: hausse
     mailles_dispo: ["DEPT", "REG", "NAT"]
     verbe_action: Déployer la fibre sur
-    verbe_action_court: Déployer
+    verbe_action_court: Déployer sur
     unite: '% du territoire'
     unite_courte: '% du territoire'
     order_id: 1
@@ -2782,7 +2782,7 @@ indicateurs:
     tendance: hausse
     mailles_dispo: ["NAT"]
     verbe_action: Investir
-    unite: milliars d'euros avec France 20230
+    unite: milliards d'euros avec France 2030
     verbe_action_court: Engager
     unite_courte: Mds€
     order_id: 1
