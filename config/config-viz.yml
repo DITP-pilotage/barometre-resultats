@@ -1169,7 +1169,7 @@ indicateurs:
     tendance: baisse
     mailles_dispo: ["DEPT", "REG", "NAT"]
     verbe_action: Diminuer à
-    unite: les vols avec violence sur les 12 derniers moi
+    unite: les vols avec violence sur les 12 derniers mois
     unite_courte: vols
     order_id: 1
     display_baro: true
@@ -1959,7 +1959,7 @@ indicateurs:
     mailles_dispo: ["NAT"]
     verbe_action: Atteindre
     unite: "% d'appréciation de la transparence par les lycéens sur Parcoursup"
-    unite_courte: '%'
+    unite_courte: '% d'appréciation'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -2531,7 +2531,7 @@ indicateurs:
     tendance: hausse
     mailles_dispo: ["DEPT", "REG", "NAT"]
     verbe_action: Couvrir
-    unite: habitants par une Zone à Faible Emission
+    unite: habitants par une Zone à Faible Emissions
     unite_courte: habitants
     order_id: 1
     display_baro: true
@@ -2814,7 +2814,7 @@ indicateurs:
     tendance: hausse
     mailles_dispo: ["REG", "NAT"]
     verbe_action: Atteindre
-    unite: "% de taux d'emploi pour les élèves sortants d'un lycée professionnel"
+    unite: "% de taux d'emploi pour les élèves sortant d'un lycée professionnel"
     unite_courte: "% de taux d'emploi"
     order_id: 1
     display_baro: true
@@ -3206,8 +3206,9 @@ indicateurs:
     thematique: Affaires sociales
     tendance: hausse
     mailles_dispo: ["DEPT", "REG", "NAT"]
-    verbe_action: Accompagner
+    verbe_action: Faire bénéficier
     unite: personnes d'un accompagnement renforcé au domicile
+    verbe_action_court: Accompagner
     unite_courte: personnes
     order_id: 1
     display_baro: true
