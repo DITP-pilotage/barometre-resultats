@@ -1959,7 +1959,7 @@ indicateurs:
     mailles_dispo: ["NAT"]
     verbe_action: Atteindre
     unite: "% d'appréciation de la transparence par les lycéens sur Parcoursup"
-    unite_courte: '% d'appréciation'
+    unite_courte: "% d'appréciation"
     order_id: 1
     display_baro: true
     display_badge: false
