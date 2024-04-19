@@ -1,0 +1,234 @@
+{
+    "type": "object",
+    "properties": {
+        "indicateurs": {
+            "type": "array",
+            "description": "Liste des indicateurs",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "description": "Identifiant de l'indicateur"
+                    },
+                    "thematique": {
+                        "type": "string",
+                        "description": "Thematique de l'indicateur."
+                    },
+                    "tendance": {
+                        "type": "string",
+                        "description": "Tendance d'évolution attendue de l'indicateur.",
+                        "enum": [
+                            "hausse",
+                            "baisse",
+                            "autre"
+                        ]
+                    },
+                    "order_id": {
+                        "type": "integer",
+                        "description": "Ordre d'affichage de l'indicateur dans son chantier"
+                    },
+                    "mailles_dispo": {
+                        "type": "array",
+                        "minItems": 1,
+                        "items": {
+                            "type": "string",
+                            "enum": [
+                                "DEPT",
+                                "REG",
+                                "NAT"
+                            ]
+                        }
+                    },
+                    "values": {
+                        "type": "object",
+                        "description": "Dates remarquables pour l'affichage des données de l'indicateur.",
+                        "properties": {
+                            "cumul": {
+                                "type": "boolean",
+                                "description": "Réaliser un cumul ou non des valeurs."
+                            },
+                            "cumul_from_month": {
+                                "type": "string",
+                                "description": "Mois depuis lequel réaliser le cumul des valeurs.",
+                                "enum": [
+                                    "01",
+                                    "02",
+                                    "03",
+                                    "04",
+                                    "05",
+                                    "06",
+                                    "07",
+                                    "08",
+                                    "09",
+                                    "10",
+                                    "11",
+                                    "12"
+                                ]
+                            },
+                            "date_va": {
+                                "type": "string",
+                                "description": "Date de la valeur actuelle à afficher. Si 'null', on affiche la dernière valeur disponible.",
+                                "format": "date-time"
+                            },
+                            "date_start": {
+                                "type": "string",
+                                "description": "Date de démarrage du graphique. Si 'null', afficher tout.",
+                                "format": "date-time"
+                            },
+                            "date_end": {
+                                "type": "string",
+                                "description": "Date de fin du graphique. Si 'null', afficher tout.",
+                                "format": "date-time"
+                            }
+                        },
+                        "required": [
+                            "cumul",
+                            "cumul_from_month",
+                            "date_va",
+                            "date_start",
+                            "date_end"
+                        ]
+                    },
+                    "graphs": {
+                        "type": "array",
+                        "description": "Liste contenant la configuration des différents graphiques à afficher.",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "order_id": {
+                                    "type": "integer",
+                                    "description": "Ordre d'affichage du graphique."
+                                },
+                                "type": {
+                                    "type": "string",
+                                    "description": "Type du graphique. Valeurs tirées du dsfr-chart. D'autres types de graphiques pourront être ajouté a posteriori",
+                                    "enum": [
+                                        "scatter-chart",
+                                        "line-chart",
+                                        "bar-chart",
+                                        "gauge-chart",
+                                        "table-chart"
+                                    ]
+                                },
+                                "label": {
+                                    "type": "string",
+                                    "description": "Label du type de graphique à afficher dans le tags du tableau de bord (ex : Graphique, tableau, objectif)"
+                                },
+                                "options": {
+                                    "type": "object",
+                                    "description": "Différentes options du graphiques. Les options pourront être complété selon les besoins",
+                                    "properties": {
+                                        "color": {
+                                            "type": "string",
+                                            "description": "Couleur du graphique, parmi les couleurs dsfr-chart"
+                                        },
+                                        "legend": {
+                                            "type": "string",
+                                            "description": "Légende du graphique. Si nulle, on utilise unite par défaut"
+                                        },
+                                        "vline": {
+                                            "type": "array",
+                                            "description": "Valeurs des lignes verticales à tracer"
+                                        },
+                                        "vlinename": {
+                                            "type": "array",
+                                            "description": "Nom des lignes verticales"
+                                        },
+                                        "vlinecolor": {
+                                            "type": "array",
+                                            "description": "Couleurs des lignes verticales à tracer, parmi les couleurs dsfr-chart"
+                                        },
+                                        "hline": {
+                                            "type": "array",
+                                            "description": "Valeurs des lignes horizontales à tracer"
+                                        },
+                                        "hlinename": {
+                                            "type": "array",
+                                            "description": "Nom des lignes horizontales"
+                                        },
+                                        "hlineclor": {
+                                            "type": "array",
+                                            "description": "Couleurs des lignes horizontales à tracer, parmi les couleurs dsfr-chart"
+                                        },
+                                        "showline": {
+                                            "type": "boolean",
+                                            "description": "Uniquement pour scatter-chart. Relier ou non les points"
+                                        },
+                                        "horizontal": {
+                                            "type": "boolean",
+                                            "description": "Uniquement pour bar-chart. Afficher ou non le graphique à l'horizontal"
+                                        }
+                                    }
+                                }
+                            },
+                            "required": [
+                                "order_id",
+                                "type",
+                                "label"
+                            ]
+                        }
+                    },
+                    "display_badge": {
+                        "type": "boolean",
+                        "description": "Afficher ou non le badge de couleur qui compare la valeur actuelle à la valeur précédente.",
+                        "default": true
+                    },
+                    "verbe_action": {
+                        "type": "string",
+                        "description": "Verbe d'action pour la phrase objectif"
+                    }, 
+                    "unite": {
+                        "type": "string",
+                        "description": "Unité de l'indicateur, utilisé pour la phrase objectif"
+                    },
+                    "verbe_action_court": {
+                        "type": "string",
+                        "description": "Verbe d'action pour la phrase objectif courte. Prends la valeur de verbe_action si null ou non renseigné"
+                    },
+                    "unite_courte": {
+                        "type": "string",
+                        "description": "Unite pour la phrase objectif courte. Prends la valeur de unite si null ou non renseigné"
+                    }
+                },
+                "required": [
+                    "id",
+                    "thematique",
+                    "tendance",
+                    "order_id",
+                    "mailles_dispo",
+                    "values",
+                    "graphs",
+                    "display_badge",
+                    "verbe_action",
+                    "unite"
+                ]
+            }
+        },
+        "chantiers": {
+            "type": "array",
+            "description": "Liste des chantiers",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "description": "Identifiant du chantier"
+                    },
+                    "order_id": {
+                        "type": "integer",
+                        "description": "Ordre d'affichage du chantier dans son engagement"
+                    },
+                },
+                "required": [
+                    "id",
+                    "order_id"
+                ]
+            }
+        }
+    },
+    "required": [
+        "indicateurs",
+        "chantiers"
+    ]
+}
