@@ -1557,7 +1557,7 @@ indicateurs:
     tendance: hausse
     mailles_dispo: ["NAT"]
     verbe_action: Planter
-    unite: millions d’arbres avec des financements publics
+    unite: millions d’arbres avec des financements publics d'ici 2026
     unite_courte: millions d’arbres
     order_id: 1
     display_baro: true
