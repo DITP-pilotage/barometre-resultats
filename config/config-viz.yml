@@ -73,7 +73,7 @@ indicateurs:
     mailles_dispo: ["DEPT", "REG", "NAT"]
     verbe_action: Avoir
     unite: '% des élèves lisant de manière fluide au début de la 6ème'
-    unite_courte: '% des élèves'
+    unite_courte: '% des élèves de 6ème'
     order_id: 1
     display_baro: true
     display_badge: false
