@@ -1460,8 +1460,8 @@ indicateurs:
     tendance: hausse
     mailles_dispo: ["DEPT", "REG", "NAT"]
     verbe_action: Atteindre
-    unite: emplois dans les métiers industriels
-    unite_courte: emplois
+    unite: "millions d'emplois dans les métiers industriels"
+    unite_courte: "millions d'emplois"
     order_id: 1
     display_baro: true
     display_badge: false
