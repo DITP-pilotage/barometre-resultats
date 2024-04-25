@@ -453,8 +453,8 @@ indicateurs:
     tendance: hausse
     mailles_dispo: ["DEPT", "REG", "NAT"]
     verbe_action: Engager
-    unite: écoles, collèges et lycées dans Phare
-    unite_courte: établissements
+    unite: "% des écoles, collèges et lycées dans Phare (en %)"
+    unite_courte: "% des établissements"
     order_id: 1
     display_baro: true
     display_badge: false
@@ -680,7 +680,7 @@ indicateurs:
     thematique: Affaires sociales
     tendance: hausse
     mailles_dispo: ["DEPT", "REG", "NAT"]
-    verbe_action: Faire bénéfier
+    verbe_action: Faire bénéficer
     unite: enfants d'au moins un forfait d'intervention précoce
     unite_courte: enfants
     order_id: 1
@@ -3488,8 +3488,8 @@ indicateurs:
     tendance: hausse
     mailles_dispo: ["DEPT", "REG", "NAT"]
     verbe_action: Réduire à
-    unite: Md€ le montant des fraudes en matière sociale constatées toutes branches confondues
-    unite_courte: Md€
+    unite: Mds€ le montant des fraudes en matière sociale constatées toutes branches confondues
+    unite_courte: Mds€
     order_id: 1
     display_baro: true
     display_badge: false
