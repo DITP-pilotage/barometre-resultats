@@ -27,6 +27,9 @@ if __name__ =="__main__":
     baro_meta_chantiers = utils.get_metadata_ch("Base cible", db_url)
     baro_meta_chantiers.to_csv("../../metadata/meta_chantiers.csv", index=False)
 
+    # 2.3- Metadonnées chantiers
+    baro_meta_engagement = utils.get_metadata_engagement("Base cible", db_url)
+    baro_meta_engagement.to_csv("../../metadata/meta_engagement.csv", index=False)
 
     # Si GIT_DO_PUSH=true, on exécute les commandes git
     if os.environ.get('GIT_DO_PUSH', '').upper()=='TRUE':
