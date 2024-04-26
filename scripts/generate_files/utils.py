@@ -57,6 +57,16 @@ def get_metadata(connection_alias, db_url):
 
     return res
 
+def get_metadata_ch(connection_alias, db_url):
+    QUERY = "SELECT * FROM barometre.baro_meta_chantiers"
+
+    db = DatabaseHelper(connection_alias, db_url)
+    db.connect()
+    res = db.query(QUERY)
+    db.disconnect()
+
+    return res
+
 def export_by_indic(data_, out_dir):
 
     n_files_exported=0
