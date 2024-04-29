@@ -421,8 +421,8 @@ indicateurs:
     thematique: Environnement
     tendance: hausse
     mailles_dispo: ["DEPT", "REG", "NAT"]
-    verbe_action: Prendre en charge
-    unite: millions de tonnes de déchets non dangereux non inertes pour les valoriser
+    verbe_action: Valoriser
+    unite: de tonnes de déchets non dangereux non inertes
     unite_courte: millions de tonnes
     order_id: 1
     display_baro: true
@@ -487,7 +487,7 @@ indicateurs:
     tendance: hausse
     mailles_dispo: ["DEPT", "REG", "NAT"]
     verbe_action: Valider
-    unite: dossiers MaPrimeRénov'
+    unite: de dossiers MaPrimeRénov'
     unite_courte: dossiers
     order_id: 1
     display_baro: true
@@ -809,8 +809,8 @@ indicateurs:
     tendance: hausse
     mailles_dispo: ["REG", "NAT"]
     verbe_action: Assurer
-    unite: heures de patrouille de policiers et gendarmes dans l'espace public
-    unite_courte: heures de patrouille
+    unite: d'heures de patrouille de policiers et gendarmes dans l'espace public
+    unite_courte: d'heures de patrouille
     order_id: 1
     display_baro: true
     display_badge: false
@@ -1073,7 +1073,7 @@ indicateurs:
     tendance: hausse
     mailles_dispo: ["DEPT", "REG", "NAT"]
     verbe_action: Attribuer
-    unite: bonus, primes à la conversion, prêts à taux zéro, et aides au leasing
+    unite: de bonus, primes à la conversion, prêts à taux zéro, et aides au leasing
     unite_courte: dispositifs de soutien
     order_id: 1
     display_baro: true
@@ -1200,8 +1200,8 @@ indicateurs:
     tendance: hausse
     mailles_dispo: ["DEPT", "REG", "NAT"]
     verbe_action: Réaliser
-    unite: actes mensuels dans les France Services
-    unite_courte: actes mensuels
+    unite: "d'actes mensuels dans les France Services"
+    unite_courte: "d'actes mensuels"
     order_id: 1
     display_baro: true
     display_badge: false
@@ -1557,7 +1557,7 @@ indicateurs:
     tendance: hausse
     mailles_dispo: ["NAT"]
     verbe_action: Planter
-    unite: millions d’arbres avec des financements publics d'ici 2026
+    unite: millions d’arbres avec des financements publics d'ici 2026 (en millions)
     unite_courte: millions d’arbres
     order_id: 1
     display_baro: true
@@ -2498,9 +2498,9 @@ indicateurs:
     tendance: hausse
     mailles_dispo: ["REG", "NAT"]
     verbe_action: Donner à 
-    unite: habitants une solution de tri à la source des biodéchets
+    unite: "d'habitants une solution de tri à la source des biodéchets"
     verbe_action_court: Assurer une solution pour
-    unite_courte: habitants
+    unite_courte: "d'habitants"
     order_id: 1
     display_baro: true
     display_badge: false
@@ -2531,8 +2531,8 @@ indicateurs:
     tendance: hausse
     mailles_dispo: ["DEPT", "REG", "NAT"]
     verbe_action: Couvrir
-    unite: habitants par une Zone à Faible Emissions
-    unite_courte: habitants
+    unite: "d'habitants par une Zone à Faible Emissions"
+    unite_courte: "d'habitants"
     order_id: 1
     display_baro: true
     display_badge: false
@@ -3457,8 +3457,8 @@ indicateurs:
     tendance: hausse
     mailles_dispo: ["DEPT", "REG", "NAT"]
     verbe_action: Réaliser
-    unite: accompagnements par les conseillers numériques
-    unite_courte: accompagnements
+    unite: "d'accompagnements par les conseillers numériques"
+    unite_courte: "d'accompagnements"
     order_id: 1
     display_baro: true
     display_badge: false
