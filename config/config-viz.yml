@@ -619,7 +619,7 @@ indicateurs:
     verbe_action_court: Atteindre
     unite_courte: des pères ou conjoints
     order_id: 1
-    display_baro: true
+    display_baro: false
     display_badge: false
     values:
       cumul: false
@@ -913,7 +913,7 @@ indicateurs:
     verbe_action_court: Atteindre
     unite_courte: '% des femmes enceintes'
     order_id: 1
-    display_baro: true
+    display_baro: false
     display_badge: false
     values:
       cumul: false

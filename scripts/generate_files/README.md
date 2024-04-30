@@ -10,6 +10,12 @@ Voir le fichier d'exemple `main.py`. Pour l'exécuter:
 pipenv run python3 main.py
 ```
 
-## Installation psycopg2
+## Installation environnement
 
-En cas de problème pour avec l'installation du module psycopg2, se réferer au lien suivant : https://unix.stackexchange.com/questions/345814/gcc-error-installing-psycopg2-package-for-python3-on-centos-7-3
+Pour installer l'environnement, exécuter `pipenv lock && pipenv sync`.
+
+*Erreur Installation `psycopg2`:* En cas de problème pour avec l'installation du module `psycopg2`, exécuter :
+
+```sh
+sudo apt install libpq-dev # Voir https://unix.stackexchange.com/a/583547
+```
