@@ -20,6 +20,5 @@ run_command('git add ../../data/')
 run_command('git add ../../metadata/')
 # Commit avec un auteur spécifique: GIT_BOT_USERNAME
 run_command(f"git -c user.name={GIT_BOT_USERNAME} -c user.email={GIT_BOT_EMAIL} commit -m {GIT_COMMIT_MSG}")
-run_command('git status')
 run_command(f'git push https://{GIT_USER}:{GIT_TOKEN}@{GIT_REPO_URL}')
 
