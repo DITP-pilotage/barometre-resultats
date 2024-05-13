@@ -1,5 +1,6 @@
 import subprocess
 import os
+from datetime import datetime
 
 def run_command(cmd_to_run):
     subprocess.run(cmd_to_run.split(' '))
@@ -8,7 +9,7 @@ def run_command(cmd_to_run):
 GIT_REPO_URL="github.com/DITP-pilotage/barometre-resultats.git"
 GIT_BOT_USERNAME="bot-data"
 GIT_BOT_EMAIL="bot-data@ditp.fr"
-GIT_COMMIT_MSG="data::test-date"
+GIT_COMMIT_MSG="data::"+datetime.now().strftime("%d-%m-%Y")
 
 # Credentials for pushing
 GIT_USER=os.environ.get('GIT_USER')
