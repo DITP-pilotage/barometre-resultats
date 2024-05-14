@@ -3,8 +3,8 @@ name: "Mise à jour de la qualif"
 on: workflow_dispatch
 
 jobs:
-  maj-qualif:
-
+  trigger-scalingo:
+    name: "Lancement job Scalingo"
     runs-on: ubuntu-latest
     steps:
     - uses: scalingo-community/setup-scalingo@v0.1.1
