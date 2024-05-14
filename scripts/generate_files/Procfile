@@ -1,1 +1,1 @@
-web: python -c 'print("Deployment done")'
+web: python3 -m http.server --directory /dev/null $PORT
