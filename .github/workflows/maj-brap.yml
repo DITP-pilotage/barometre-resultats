@@ -13,4 +13,4 @@ jobs:
         api_token: ${{ secrets.scalingo_api_token }}
         app_name: 'brap-publi'
     
-    - run: echo 123
+    - run: /bin/bash scalingo_entrypoint.sh
