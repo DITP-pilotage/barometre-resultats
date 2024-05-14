@@ -65,6 +65,6 @@ def export_by_indic(data_, out_dir):
         file_path = f'{out_dir}{indic_id.lower()}.csv'
         group.to_csv(file_path, index=False)
         n_files_exported+=1
-        print('Exported:', indic_id, 'at', f'{out_dir}{indic_id.lower()}.csv', '- file', n_files_exported)
+        if os.environ.get('LOG_FILE_WRITE', '').upper()=='TRUE': print('Exported:', indic_id, 'at', f'{out_dir}{indic_id.lower()}.csv', '- file', n_files_exported)
     
     return n_files_exported
