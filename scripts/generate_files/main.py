@@ -1,7 +1,7 @@
 import utils
 import os
 from dotenv import load_dotenv
-import gitadd
+import utils_git
 
 
 if __name__ =="__main__":
@@ -22,7 +22,7 @@ if __name__ =="__main__":
 
     # Si GIT_DO_PUSH=true, on exécute les commandes git
     if bool(os.environ.get('GIT_DO_PUSH')):
-        gitadd.git_add_commit_push()
+        utils_git.git_add_commit_push()
     else:
         print("Skipping git push: GIT_DO_PUSH="+os.environ.get('GIT_DO_PUSH'))
     
