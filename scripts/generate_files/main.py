@@ -16,7 +16,7 @@ if __name__ =="__main__":
 
 
     # Si GIT_DO_PUSH=true, on exécute les commandes git
-    if os.environ.get('GIT_DO_PUSH').upper()=='TRUE':
+    if os.environ.get('GIT_DO_PUSH', '').upper()=='TRUE':
         print("[git] Pushing changes")
         utils_git.git_add_commit_push()
     else:
