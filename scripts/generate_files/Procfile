@@ -1,1 +1,1 @@
-web: bash scalingo_entrypoint.sh
+web: echo "deployment done"
