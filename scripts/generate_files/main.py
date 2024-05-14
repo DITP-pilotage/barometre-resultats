@@ -21,7 +21,8 @@ if __name__ =="__main__":
     metadata_baro.to_csv("../../metadata/meta_indicateurs.csv", index=False)
 
     # Si GIT_DO_PUSH=true, on exécute les commandes git
-    if bool(os.environ.get('GIT_DO_PUSH')):
+    if os.environ.get('GIT_DO_PUSH').upper()=='TRUE':
+        print("[git] Pushing changes")
         utils_git.git_add_commit_push()
     else:
         print("Skipping git push: GIT_DO_PUSH="+os.environ.get('GIT_DO_PUSH'))
