@@ -1,7 +1,7 @@
 {
     "jobs": [
       {
-        "command": "0,20 * * * * /bin/bash scalingo_entrypoint.sh"
+        "command": "0,36 * * * * /bin/bash scalingo_entrypoint.sh"
       }
     ]
   }

@@ -1,1 +1,1 @@
-web: exit 0
+web: python -c 'print("Deployment done")'
