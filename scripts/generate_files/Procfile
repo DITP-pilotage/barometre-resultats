@@ -1,1 +1,1 @@
-web: echo "deployment done"
+web: exit 0
