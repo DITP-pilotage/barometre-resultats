@@ -1,6 +1,7 @@
 import utils
 import os
 from dotenv import load_dotenv
+import gitadd
 
 
 if __name__ =="__main__":
@@ -19,4 +20,10 @@ if __name__ =="__main__":
     ##  Export des données dans metadata/meta_indicateurs.csv
     metadata_baro.to_csv("../../metadata/meta_indicateurs.csv", index=False)
 
+    # Si GIT_DO_PUSH=true, on exécute les commandes git
+    if bool(os.environ.get('GIT_DO_PUSH')):
+        gitadd.git_add_commit_push()
+    else:
+        print("Skipping git push: GIT_DO_PUSH="+os.environ.get('GIT_DO_PUSH'))
+    
     print('done')
