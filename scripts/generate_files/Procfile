@@ -1,1 +1,1 @@
-web: bash entrypoint.sh
+web: bash scalingo_entrypoint.sh
