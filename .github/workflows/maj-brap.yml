@@ -3,7 +3,8 @@ name: "Mise à jour de la qualif"
 on: 
   workflow_dispatch:
   schedule:
-    - cron: "20 * * * *"   # Toutes les heures, à la minute 20
+    - cron: "0 6 * * *"   # Tous les jours, à 6h du matin
+
 jobs:
   trigger-scalingo:
     name: "Lancement job Scalingo"
