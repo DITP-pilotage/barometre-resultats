@@ -1,5 +1,5 @@
 # Branch to checkout
-BRANCH=test-auto
+BRANCH=PIL-224-autom-maj-brap
 
 echo "> git clone barometre-resultats.git"
 git clone --quiet https://github.com/DITP-pilotage/barometre-resultats.git barometre-resultats -b $BRANCH --depth 1
