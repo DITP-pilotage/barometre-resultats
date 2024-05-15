@@ -466,12 +466,12 @@ indicateurs:
     tendance: hausse
     mailles_dispo: ["DEPT", "REG", "NAT"]
     verbe_action: Engager
-    unite: "% des écoles, collèges et lycées dans Phare (en %)"
+    unite: "% des écoles, collèges et lycées dans Phare"
     unite_courte: "% des établissements"
     order_id: 1
     display_baro: true
     display_badge: false
-    pourcentage: false
+    pourcentage: true
     values:
       cumul: false
       cumul_from_month: null
@@ -1709,7 +1709,7 @@ indicateurs:
     order_id: 1
     display_baro: true
     display_badge: false
-    pourcentage: false
+    pourcentage: true
     values:
       cumul: false
       cumul_from_month: null
