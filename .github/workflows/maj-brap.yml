@@ -1,10 +1,13 @@
 name: "Mise à jour de la qualif"
 
-on: workflow_dispatch
+on: 
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * *"   # Tous les jours, à 6h du matin
 
 jobs:
-  maj-qualif:
-
+  trigger-scalingo:
+    name: "Lancement job Scalingo"
     runs-on: ubuntu-latest
     steps:
     - uses: scalingo-community/setup-scalingo@v0.1.1
@@ -13,4 +16,4 @@ jobs:
         api_token: ${{ secrets.scalingo_api_token }}
         app_name: 'brap-publi'
     
-    - run: echo 123
+    - run: scalingo run /bin/bash scalingo_entrypoint.sh
