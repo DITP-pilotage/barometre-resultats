@@ -12,7 +12,7 @@ jobs:
         with:
           # The target URL
           # Required: true if custom-config is not set
-          url: https://api.github.com/repos/OWNER/REPO/pulls
+          url: https://api.github.com/repos/DITP-pilotage/barometre-resultats/pulls
 
           # The request method, basically it's one of GET|POST|PUT|PATCH
           # Default is GET
@@ -40,7 +40,7 @@ jobs:
 
           # The authentication using token
           # This will override the Authorization header, for example Authorization: Bearer QWxhZGRpbjpPcGVuU2VzYW1l
-          bearer-token: ${{ secrets.bearer_token }}
+          bearer-token: ${{ secrets.PAT }}
 
 
           # If it is set to true, it will show the response log in the GitHub UI
