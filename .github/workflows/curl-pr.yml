@@ -1,6 +1,6 @@
 name: "curl api"
 
-on: [push, workflow_dispatch]
+on: [workflow_dispatch]
 
 jobs:
   test-curl-action:
@@ -32,7 +32,7 @@ jobs:
 
           # Body request
           # Apply only to POST|PUT request
-          body: '{"title":"MEP","body":"Mise en prod des données de la qualif.","head":"qualif","base":"prod"}'
+          body: '{"title":"MEP","body":"Mise en prod des données de la qualif.","head":"qualif","base":"prod-clone"}'
 
           # Request timeout (millisec)
           # Default: 1000
