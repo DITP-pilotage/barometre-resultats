@@ -25,6 +25,6 @@ jobs:
             draft: false
             old_string: "<!-- Add your description here -->"
             new_string: "** Automatic pull request**"
-            get_diff: true
+            get_diff: false
             ignore_users: "dependabot"
-            allow_no_diff: false
+            allow_no_diff: true
