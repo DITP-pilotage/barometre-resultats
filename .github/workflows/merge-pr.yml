@@ -3,7 +3,7 @@ name: "MEP qualif -> prod"
 on: 
   workflow_dispatch:
   schedule:
-    - cron: "0 10 * * tue"   # Chaque mardi à 10h
+    - cron: "0 8 * * tue"   # Chaque mardi à 10h
 
 jobs:
   create-pr:
