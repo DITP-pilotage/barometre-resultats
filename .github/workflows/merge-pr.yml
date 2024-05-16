@@ -1,4 +1,4 @@
-name: "MEP qualif -> prod-clone"
+name: "MEP qualif -> prod"
 
 on: 
   workflow_dispatch:
@@ -17,7 +17,7 @@ jobs:
         with:
           token: ${{ secrets.PAT }}
           commit-message: "MEP merge auto"
-          branch: prod-clone
+          branch: prod
           delete-branch: false
           title: 'MEP merge auto'
           body: ""
