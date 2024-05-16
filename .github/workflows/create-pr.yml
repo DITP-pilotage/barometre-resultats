@@ -1,0 +1,30 @@
+name: "[test] create pr"
+
+on: 
+  workflow_dispatch:
+  schedule:
+    - cron: "0 10 * * tue"   # Chaque mardi à 10h
+
+jobs:
+  create-pr:
+    name: "Création PR"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run the Action
+        uses: devops-infra/action-pull-request@v0.5.5
+        with:
+            github_token: ${{ secrets.PAT }}
+            source_branch: qualif
+            target_branch: prod-clone
+            title: My pull request
+            body: "**Automated pull request**"
+            reviewer: octocat
+            assignee: octocat
+            label: enhancement
+            draft: false
+            old_string: "<!-- Add your description here -->"
+            new_string: "** Automatic pull request**"
+            get_diff: true
+            ignore_users: "dependabot"
+            allow_no_diff: false
