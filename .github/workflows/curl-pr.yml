@@ -32,7 +32,7 @@ jobs:
 
           # Body request
           # Apply only to POST|PUT request
-          body: '{"title":"Amazing new feature","body":"Please pull these awesome changes in!","head":"octocat:new-feature","base":"master"}'
+          body: '{"title":"Amazing new feature","body":"Please pull these awesome changes in!","head":"qualif","base":"prod"}'
 
           # Request timeout (millisec)
           # Default: 1000
