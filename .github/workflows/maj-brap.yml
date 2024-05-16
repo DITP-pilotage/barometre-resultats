@@ -17,3 +17,20 @@ jobs:
         app_name: 'brap-publi'
     
     - run: scalingo run /bin/bash scalingo_entrypoint.sh
+  create-pr:
+    name: "Création PR"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Call API Github"
+        uses: indiesdev/curl@v1.1
+        with:
+          method: "POST"
+          url: https://api.github.com/repos/${{ github.repository }}/pulls
+          accept: 200,201,204
+          headers: '{ "Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28" }'
+          params: '{}'
+          body: '{"title":"MEP","body":"Mise en prod des données de la qualif.","head":"qualif","base":"prod-clone"}'
+          timeout: 1000
+          bearer-token: ${{ secrets.PAT }}
+          log-response: true
+          retries: 3
