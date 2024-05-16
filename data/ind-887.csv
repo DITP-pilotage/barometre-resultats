@@ -1,7 +1,7 @@
 indic_id,enforce_zone_id,metric_enforce_date,maille,indic_vi,indic_va,indic_vc,indic_ta
 IND-887,FRANCE,2022-01-01,NAT,0.0,,,
 IND-887,FRANCE,2023-09-01,NAT,,4044.0,,
-IND-887,FRANCE,2023-12-01,NAT,,4044.0,,54.14
+IND-887,FRANCE,2023-12-01,NAT,,4968.0,,66.51
 IND-887,FRANCE,2024-12-01,NAT,,,7469.0,
 IND-887,R01,2023-01-01,REG,0.0,,,
 IND-887,R01,2023-06-01,REG,,2.0,,
