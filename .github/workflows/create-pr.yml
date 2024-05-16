@@ -15,8 +15,7 @@ jobs:
         uses: devops-infra/action-pull-request@v0.5.5
         with:
             github_token: ${{ secrets.PAT }}
-            source_branch: prod-clone
-            target_branch: qualif
+            target_branch: prod-clone
             title: My pull request
             body: "**Automated pull request**"
             reviewer: octocat
