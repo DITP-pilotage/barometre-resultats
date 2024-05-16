@@ -17,7 +17,6 @@ jobs:
         with:
           token: ${{ secrets.PAT }}
           commit-message: "[test] MEP"
-          branch: qualif
           base: prod
           delete-branch: false
           title: '[Example] Update report'
