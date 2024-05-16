@@ -3,7 +3,7 @@ name: "Màj qualif"
 on: 
   workflow_dispatch:
   schedule:
-    - cron: "0 6 * * *"   # Tous les jours, à 6h du matin
+    - cron: "0 5 * * *"   # Tous les jours, à 7h du matin
 
 jobs:
   trigger-scalingo:
