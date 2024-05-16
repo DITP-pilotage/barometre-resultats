@@ -1,4 +1,4 @@
-name: "Mise à jour de la qualif"
+name: "Màj qualif"
 
 on: 
   workflow_dispatch:
@@ -17,6 +17,7 @@ jobs:
         app_name: 'brap-publi'
     
     - run: scalingo run /bin/bash scalingo_entrypoint.sh
+  
   create-pr:
     name: "Création PR"
     runs-on: ubuntu-latest
@@ -30,6 +31,7 @@ jobs:
           accept: 200,201,204,422 # 422 if PR already exists
           headers: '{ "Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28" }'
           params: '{}'
+          # PR de qualif -> prod-clone
           body: '{"title":"MEP","body":"Mise en prod des données de la qualif.","head":"qualif","base":"prod-clone"}'
           timeout: 1000
           bearer-token: ${{ secrets.PAT }}
