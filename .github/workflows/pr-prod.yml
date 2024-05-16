@@ -17,7 +17,7 @@ jobs:
         with:
           token: ${{ secrets.PAT }}
           commit-message: "[test] MEP"
-          base: prod
+          base: prod-clone
           delete-branch: false
           title: '[Example] Update report'
           body: |
