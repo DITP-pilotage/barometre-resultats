@@ -12,7 +12,7 @@ jobs:
         with:
           # The target URL
           # Required: true if custom-config is not set
-          url: https://api.github.com/repos/DITP-pilotage/barometre-resultats/pulls
+          url: https://api.github.com/repos/${{ github.repository }}/pulls
 
           # The request method, basically it's one of GET|POST|PUT|PATCH
           # Default is GET
@@ -32,7 +32,7 @@ jobs:
 
           # Body request
           # Apply only to POST|PUT request
-          body: '{"title":"Amazing new feature","body":"Please pull these awesome changes in!","head":"qualif","base":"prod"}'
+          body: '{"title":"MEP","body":"Mise en prod des données de la qualif.","head":"qualif","base":"prod"}'
 
           # Request timeout (millisec)
           # Default: 1000
