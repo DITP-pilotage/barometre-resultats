@@ -1470,8 +1470,8 @@ indicateurs:
     tendance: baisse
     mailles_dispo: ["DEPT", "REG", "NAT"]
     verbe_action: Réduire à
-    unite: jours le délai d'instruction d'autorisation d'exploiter une nouvelle activité industrielle
-    unite_courte: jours
+    unite: mois le délai d'instruction d'autorisation d'exploiter une nouvelle activité industrielle
+    unite_courte: mois
     order_id: 1
     display_baro: true
     display_badge: false
