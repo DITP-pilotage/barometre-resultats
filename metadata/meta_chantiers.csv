@@ -1,5 +1,5 @@
 chantier_id,ch_nom,engagement_short
-CH-001,Déployer le programme France 2030,EMPLOI
+CH-001,Mettre en œuvre et assurer l'impact du programme France 2030,EMPLOI
 CH-004,"Lutter contre la fraude fiscale, douanière et sociale",PROGRES
 CH-006,Faciliter l'installation et le développement des sites industriels,EMPLOI
 CH-011,Assurer la couverture numérique du territoire,PROGRES
@@ -57,5 +57,4 @@ CH-157,Favoriser l'engagement civique des jeunes,PROGRES
 CH-162,Améliorer la qualité du logement en outre-mer,PROGRES
 CH-166,Développer et améliorer l’accueil et la prise en charge des personnes âgées à domicile et en EHPAD,PROGRES
 CH-169,Permettre une intervention précoce auprès des enfants ayant un trouble du neuro-développement,PROGRES
-CH-170,"Poursuivre le déploiement du plan ""1 000 premiers jours""",PROGRES
 CH-173,Renforcer notre souveraineté industrielle,EMPLOI
