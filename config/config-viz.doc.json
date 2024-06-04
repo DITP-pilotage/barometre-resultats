@@ -189,6 +189,10 @@
                     "unite_courte": {
                         "type": "string",
                         "description": "Unite pour la phrase objectif courte. Prends la valeur de unite si null ou non renseigné"
+                    },
+                    "unite_va": {
+                        "type": "string",
+                        "description": "Unite de la valeur actuelle. Doit être courte (ex : %, cm...)"
                     }
                 },
                 "required": [
