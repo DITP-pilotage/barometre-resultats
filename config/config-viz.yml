@@ -6,6 +6,7 @@ indicateurs:
     verbe_action: Atteindre
     unite: '% de jeunes ayant le Pass culture'
     unite_courte: '% de jeunes'
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -41,6 +42,7 @@ indicateurs:
     verbe_action: Atteindre
     unite: '% de voitures électriques dans les ventes de voitures neuves'
     unite_courte: '%'
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -76,6 +78,7 @@ indicateurs:
     verbe_action: Avoir
     unite: '% des élèves lisant de manière fluide au début de la 6ème'
     unite_courte: '% des élèves de 6ème'
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -110,6 +113,7 @@ indicateurs:
     verbe_action: Avoir
     unite: '% des élèves maitrisant la résolution de problèmes au début de la 6ème'
     unite_courte: '% des élèves'
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -145,6 +149,7 @@ indicateurs:
     verbe_action: Avoir
     unite: '% des élèves maitrisant les syllabes au début du CP'
     unite_courte: '% des élèves'
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -180,6 +185,7 @@ indicateurs:
     verbe_action: Avoir
     unite: "% des élèves maitrisant l'écriture de syllabes au début du CE1"
     unite_courte: '% des élèves'
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -215,6 +221,7 @@ indicateurs:
     verbe_action: Avoir
     unite: '% des élèves sachant écrire des nombres entiers au début du CP'
     unite_courte: '% des élèves'
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -250,6 +257,7 @@ indicateurs:
     verbe_action: Avoir
     unite: '% des élèves sachant écrire des nombres entiers au début du CE1'
     unite_courte: '% des élèves'
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -300,6 +308,7 @@ indicateurs:
     verbe_action: Atteindre
     unite: '% des classes de grande section, CP et CE1 avec 24 élèves ou moins'
     unite_courte: '% des classes'
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -335,6 +344,7 @@ indicateurs:
     verbe_action: Dédoubler
     unite: '% des classes de grande section en éducation prioritaire'
     unite_courte: '% des classes'
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -369,6 +379,7 @@ indicateurs:
     verbe_action: Construire
     unite: km d’aménagements cyclables sécurisés (pistes cyclables et voies vertes)
     unite_courte: km
+    unite_va: 'km'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -401,6 +412,7 @@ indicateurs:
     verbe_action: Recycler
     unite: '% des bouteilles en plastique'
     unite_courte: '% des bouteilles'
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -436,6 +448,7 @@ indicateurs:
     verbe_action: Valoriser
     unite: de tonnes de déchets non dangereux non inertes
     unite_courte: millions de tonnes
+    unite_va: 'Mt'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -569,6 +582,7 @@ indicateurs:
     verbe_action: Réduire à 
     unite: mois le traitement de la demande globale d'accès aux droits pour les personnes handicapées
     unite_courte: mois
+    unite_va: mois
     order_id: 1
     display_baro: true
     display_badge: false
@@ -602,6 +616,7 @@ indicateurs:
     verbe_action: Réduire à 
     unite: mois le traitement de la demande d'Allocation Adulte Handicapé
     unite_courte: mois
+    unite_va: mois
     order_id: 1
     display_baro: true
     display_badge: false
@@ -835,6 +850,7 @@ indicateurs:
     verbe_action: Assurer
     unite: d'heures de patrouille de policiers et gendarmes dans l'espace public
     unite_courte: d'heures de patrouille
+    unite_va: h
     order_id: 1
     display_baro: true
     display_badge: false
@@ -870,6 +886,7 @@ indicateurs:
     verbe_action_court: Déployer sur
     unite: '% du territoire'
     unite_courte: '% du territoire'
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -939,6 +956,7 @@ indicateurs:
     unite: "% des femmes enceintes d'un Entretien Prénatal Précoce"
     verbe_action_court: Atteindre
     unite_courte: '% des femmes enceintes'
+    unite_va: '%'
     order_id: 1
     display_baro: false
     display_badge: false
@@ -1006,6 +1024,7 @@ indicateurs:
     verbe_action: Atteindre
     unite: '% de patients en affection longue durée avec un médecin traitant'
     unite_courte: '% des patients'
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -1338,6 +1357,7 @@ indicateurs:
     unite: "% des décisions d'aide juridictionnelle en moins de 5 jours"
     verbe_action_court: Atteindre
     unite_courte: '% des décisions'
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -1372,6 +1392,7 @@ indicateurs:
     unite: '% des personnes détenues par une activité professionnelle rémunérée'
     verbe_action_court: Atteindre
     unite_courte: '% des personnes détenues'
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -1472,6 +1493,7 @@ indicateurs:
     verbe_action: Réduire à
     unite: mois le délai d'instruction d'autorisation d'exploiter une nouvelle activité industrielle
     unite_courte: mois
+    unite_va: mois
     order_id: 1
     display_baro: true
     display_badge: false
@@ -1539,6 +1561,7 @@ indicateurs:
     verbe_action: Atteindre
     unite: "% des entreprises assujetties avec un index d'égalité professionnelle publié"
     unite_courte: '% des entreprises assujetties'
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -1573,6 +1596,7 @@ indicateurs:
     verbe_action_court: Atteindre
     unite: "% des entreprises assujetties avec 75 points ou plus à l'index d'égalité professionnelle"
     unite_courte: '% des entreprises assujetties'
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -1638,6 +1662,7 @@ indicateurs:
     verbe_action: Couvrir
     unite: "% des français de l'étranger par le Service France Consulaire"
     unite_courte: "% des français de l'étranger"
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -1706,6 +1731,7 @@ indicateurs:
     verbe_action: Atteindre
     unite: "% de taux de poursuite d'études pour les élèves du lycée professionnel"
     unite_courte: '% de taux de poursuite'
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -1776,6 +1802,7 @@ indicateurs:
     unite: "% d'élèves de recevoir au moins une action d'éducation artistique et culturelle"
     verbe_action court: Atteindre
     unite_courte: "% d'élèves"
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -1811,6 +1838,7 @@ indicateurs:
     unite: "% des collèges et lycées offrant au moins une action d'éducation artistique et culturelle"
     verbe_action_court: Atteindre
     unite_courte: "% des collèges et lycées"
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -1846,6 +1874,7 @@ indicateurs:
     unite: "% des écoles offrant au moins une action d'éducation artistique et culturelle"
     verbe_action_court: Atteindre
     unite_courte: "% d'écoles"
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -1880,6 +1909,7 @@ indicateurs:
     verbe_action: Assurer
     unite: '% des remplacements dans les maternelles et primaires'
     unite_courte: '% des remplacements'
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -1914,6 +1944,7 @@ indicateurs:
     verbe_action: Assurer
     unite: '% des remplacements dans les collèges et lycées pour les absences supérieures à 15 jours'
     unite_courte: '% des remplacements'
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -1984,6 +2015,7 @@ indicateurs:
     verbe_action: Atteindre
     unite: '% de taux de passage en Licence 2'
     unite_courte: '% de taux de passage'
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -2019,6 +2051,7 @@ indicateurs:
     verbe_action: Atteindre
     unite: "% d'appréciation de la transparence par les lycéens sur Parcoursup"
     unite_courte: "% d'appréciation"
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -2051,6 +2084,7 @@ indicateurs:
     verbe_action: Atteindre
     unite: '% de taux de réussite en BTS'
     unite_courte: '% de taux de réussite'
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -2083,6 +2117,7 @@ indicateurs:
     verbe_action: Atteindre
     unite: '% de taux de réussite en DUT'
     unite_courte: '% de taux de réussite'
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -2147,6 +2182,7 @@ indicateurs:
     verbe_action: Limiter à 
     unite: '% le taux de vacance des logements en Outre-Mer'
     unite_courte: '% de vacance'
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -2213,6 +2249,7 @@ indicateurs:
     verbe_action: Consommer
     unite: '% des crédits de paiement destinés à améliorer le logement en Outre-Mer'
     unite_courte: '% des crédits'
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -2248,6 +2285,7 @@ indicateurs:
     unite: "% des demandes un logement social en moins d'un an"
     verbe_action_court: Atteindre
     unite_courte: '%'
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -2283,6 +2321,7 @@ indicateurs:
     verbe_action: Réduire à
     unite: mois le délai moyen de traitement global d'une demande d'asile
     unite_courte: mois
+    unite_va: mois
     order_id: 1
     display_baro: true
     display_badge: false
@@ -2443,6 +2482,7 @@ indicateurs:
     verbe_action: Couvrir
     unite: "% de la population par le dispositif \"Service d'Accès aux Soins\""
     unite_courte: '% de la population'
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -2477,6 +2517,7 @@ indicateurs:
     verbe_action: Couvrir
     unite: '% de la population avec une communauté professionnelle territoriale de santé'
     unite_courte: '% de la population'
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -2510,7 +2551,8 @@ indicateurs:
     mailles_dispo: ["DEPT", "REG", "NAT"]
     verbe_action: Produire
     unite: TWh avec des installations photovoltaïques
-    unite_courte: Twh
+    unite_courte: TWh
+    unite_va: 'TWh'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -2543,6 +2585,7 @@ indicateurs:
     verbe_action: Assurer
     unite: GW de puissance photovoltaïque installée
     unite_courte: GW
+    unite_va: GW
     order_id: 1
     display_baro: true
     display_badge: false
@@ -2739,6 +2782,7 @@ indicateurs:
     verbe_action: Atteindre
     unite: '% de taux de satisfaction des usagers France Services'
     unite_courte: '% de satisfaction'
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -2869,7 +2913,8 @@ indicateurs:
     verbe_action: Investir
     unite: milliards d'euros avec France 2030
     verbe_action_court: Engager
-    unite_courte: Mds€
+    unite_courte: Md€
+    unite_va: Md€
     order_id: 1
     display_baro: true
     display_badge: false
@@ -2902,6 +2947,7 @@ indicateurs:
     verbe_action: Atteindre
     unite: "% de taux d'emploi pour les élèves sortant d'un lycée professionnel"
     unite_courte: "% de taux d'emploi"
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -2938,6 +2984,7 @@ indicateurs:
     unite: '% des garçons avec une dose HPV1'
     verbe_action_court: Couvrir
     unite_courte: '% des garçons'
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -2973,6 +3020,7 @@ indicateurs:
     unite: '% des filles avec une dose HPV1'
     verbe_action_court: Couvrir
     unite_courte: '% des filles'
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -3008,6 +3056,7 @@ indicateurs:
     unite: '% des affaires pénales en moins de 12 mois devant le tribunal correctionnel et devant le juge des enfants et le tribunal pour enfants'
     verbe_action_court: Atteindre
     unite_courte: '% des affaires'
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -3043,6 +3092,7 @@ indicateurs:
     unite: "% des affaires civiles en moins de 12 mois dans les tribunaux judiciaires et prud'hommes"
     verbe_action_court: Atteindre
     unite_courte: "% des affaires"
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -3077,6 +3127,7 @@ indicateurs:
     verbe_action: Atteindre
     unite: "% des premières demandes d'admission au séjour en moins de 90 jours"
     unite_courte: '%'
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -3111,6 +3162,7 @@ indicateurs:
     verbe_action: Activer
     unite: '% des comptes Mon Espace Santé de la population avec au moins une connexion'
     unite_courte: '% des comptes'
+    unite_va: '%'
     order_id: 1
     display_baro: true
     display_badge: false
@@ -3597,6 +3649,7 @@ indicateurs:
     verbe_action: Réduire à
     unite: Mds€ le montant des fraudes en matière sociale constatées toutes branches confondues
     unite_courte: Mds€
+    unite_va: 'Md€'
     order_id: 1
     display_baro: true
     display_badge: false
