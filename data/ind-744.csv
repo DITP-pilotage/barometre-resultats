@@ -1,5 +1,5 @@
 indic_id,enforce_zone_id,metric_enforce_date,maille,indic_vi,indic_va,indic_vc,indic_ta
 IND-744,FRANCE,2022-12-01,NAT,1.4,1.4,,
 IND-744,FRANCE,2023-06-01,NAT,,0.9,,
-IND-744,FRANCE,2023-12-01,NAT,,1.94199,,51.62
+IND-744,FRANCE,2023-12-01,NAT,,1.94,,51.62
 IND-744,FRANCE,2026-12-01,NAT,,,2.45,
