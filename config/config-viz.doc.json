@@ -172,31 +172,9 @@
                     "unite"
                 ]
             }
-        },
-        "chantiers": {
-            "type": "array",
-            "description": "Liste des chantiers",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "id": {
-                        "type": "string",
-                        "description": "Identifiant du chantier"
-                    },
-                    "order_id": {
-                        "type": "integer",
-                        "description": "Ordre d'affichage du chantier dans son engagement"
-                    }
-                },
-                "required": [
-                    "id",
-                    "order_id"
-                ]
-            }
         }
     },
     "required": [
-        "indicateurs",
-        "chantiers"
+        "indicateurs"
     ]
 }
