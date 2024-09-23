@@ -44,50 +44,14 @@
                         "type": "object",
                         "description": "Dates remarquables pour l'affichage des données de l'indicateur.",
                         "properties": {
-                            "cumul": {
-                                "type": "boolean",
-                                "description": "Réaliser un cumul ou non des valeurs."
-                            },
-                            "cumul_from_month": {
-                                "type": "string",
-                                "description": "Mois depuis lequel réaliser le cumul des valeurs.",
-                                "enum": [
-                                    "01",
-                                    "02",
-                                    "03",
-                                    "04",
-                                    "05",
-                                    "06",
-                                    "07",
-                                    "08",
-                                    "09",
-                                    "10",
-                                    "11",
-                                    "12"
-                                ]
-                            },
-                            "date_va": {
-                                "type": "string",
-                                "description": "Date de la valeur actuelle à afficher. Si 'null', on affiche la dernière valeur disponible.",
-                                "format": "date-time"
-                            },
                             "date_start": {
                                 "type": "string",
                                 "description": "Date de démarrage du graphique. Si 'null', afficher tout.",
                                 "format": "date-time"
-                            },
-                            "date_end": {
-                                "type": "string",
-                                "description": "Date de fin du graphique. Si 'null', afficher tout.",
-                                "format": "date-time"
                             }
                         },
                         "required": [
-                            "cumul",
-                            "cumul_from_month",
-                            "date_va",
-                            "date_start",
-                            "date_end"
+                            "date_start"
                         ]
                     },
                     "graphs": {
@@ -222,7 +186,7 @@
                     "order_id": {
                         "type": "integer",
                         "description": "Ordre d'affichage du chantier dans son engagement"
-                    },
+                    }
                 },
                 "required": [
                     "id",
