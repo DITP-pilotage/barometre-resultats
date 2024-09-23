@@ -24,10 +24,6 @@
                             "autre"
                         ]
                     },
-                    "order_id": {
-                        "type": "integer",
-                        "description": "Ordre d'affichage de l'indicateur dans son chantier"
-                    },
                     "mailles_dispo": {
                         "type": "array",
                         "minItems": 1,
@@ -163,7 +159,6 @@
                     "id",
                     "thematique",
                     "tendance",
-                    "order_id",
                     "mailles_dispo",
                     "values",
                     "graphs",
