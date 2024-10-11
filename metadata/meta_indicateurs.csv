@@ -101,7 +101,7 @@ IND-736,CH-013,,Nombre d’accompagnements réalisés par les conseillers numér
 IND-744,CH-004,,Evolution des montants de préjudices frauduleux en matière sociale constatés toutes branches confondues,,Evolution des montants de préjudices frauduleux en matière sociale constatés toutes branches confondues,hausse,random
 IND-767,CH-081,,Part d’établissements (collèges et lycées) ayant mis en oeuvre au moins une action EAC (ayant déclaré au moins une action dans ADAGE),,"L’indicateur relève la proportion de collèges et de lycées, publics et privés sous contrat, ayant mis en oeuvre au moins une action EAC. Il s’applique donc aux seuls établissements scolaires du second degré.",hausse,random
 IND-768,CH-081,,Part d’écoles ayant mis en oeuvre au moins une action EAC (qui ont déclaré au moins une action dans ADAGE),,Cet indicateur ne concerne donc que les écoles publiques et privées sous contrat. Il ne s’applique donc qu’au seul 1er degré.,hausse,random
-IND-812,CH-121,,Nombre de plateformes de répit dédiées aux aidants de personnes handicapées,,,hausse,random
+IND-812,CH-121,,Nombre de plateformes de répit dédiées aux aidants de personnes handicapées,,_,hausse,random
 IND-819,CH-121,,Nombre de plateformes de répit dédiées aux aidants de personnes âgées,,Le nombre de PFR dédiées aux aidants de personnes âgées au 31 décembre de l’année précédent l’année en cours,hausse,random
 IND-833,CH-072,,Taux de réussite en DUT,,Taux de réussite en DUT en 2 ou 3 ans des néo-bacheliers N-4 inscrits en IUT,hausse,random
 IND-834,CH-072,,Taux de réussite en BTS,,Taux de réussite en BTS en 2 ou 3 ans des néo-bacheliers N-4 inscrits en BTS,hausse,random
