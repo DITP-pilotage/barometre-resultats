@@ -3,7 +3,6 @@ CH-001,Mettre en œuvre et assurer l'impact du programme France 2030,EMPLOI
 CH-004,"Lutter contre la fraude fiscale, douanière et sociale",PROGRES
 CH-006,Faciliter l'installation et le développement des sites industriels,EMPLOI
 CH-011,Assurer la couverture numérique du territoire,PROGRES
-CH-013,Favoriser l’inclusion numérique pour tous par la formation et les conseillers numériques de proximité,PROGRES
 CH-017,Accompagner le programme visant à planter 1 milliard d'arbres d'ici 2032,TE
 CH-026,Poursuivre le renforcement capacitaire des armées,ENGAG
 CH-027,Doubler les effectifs de la réserve opérationnelle,ENGAG
@@ -50,6 +49,7 @@ CH-138,Renforcer les moyens de la  Justice avec 10 000 ETP en plus d'ici 2027,EN
 CH-140,Poursuivre le plan de création de 15 000 places nouvelles en prison,ENGAG
 CH-141,Développer l'insertion professionnelle des personnes détenues,ENGAG
 CH-143,Mieux protéger et accompagner les femmes victimes de violences,PROGRES
+CH-144,Déployer Services Publics + pour améliorer le service rendu aux Français en associant les usagers,TODO
 CH-146,Consolider le réseau des espaces France services,PROGRES
 CH-147,Améliorer la qualité de service rendu aux Français de l'étranger,PROGRES
 CH-156,Généraliser le Service national universel,ENGAG
@@ -58,3 +58,4 @@ CH-162,Améliorer la qualité du logement en outre-mer,PROGRES
 CH-166,Développer et améliorer l’accueil et la prise en charge des personnes âgées à domicile et en EHPAD,PROGRES
 CH-169,Permettre une intervention précoce auprès des enfants ayant un trouble du neuro-développement,PROGRES
 CH-173,Renforcer notre souveraineté industrielle,EMPLOI
+CH-013,,
